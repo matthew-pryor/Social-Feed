@@ -1,4 +1,7 @@
 import React, {useState, useEffect} from "react";
+import CreatePost from "./Components/CreatePost/CreatePost";
+import DisplayPost from "./Components/DisplayPost/DisplayPost";
+import Post from "./Components/Post/Post";
 
 function App() {
 
@@ -16,7 +19,11 @@ function App() {
               </pd>
             )
           })}
-        </header>
+      </header>
+
+      <body>
+
+      </body>
     </div>
   );
 }
