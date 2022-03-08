@@ -4,16 +4,25 @@ import CreatePost from "./Components/CreatePost/CreatePost";
 
 function App() {
 
-  const [entries] = useState([{name: '', comment: ''}])
+  const [entries, setEntries] = useState([{name: 'Matt', comment: 'I really hope this works'}])
+
+  function addNewComment(entry){
+
+    let tempEntries = [...entries, entry];
+
+    setEntries(tempEntries)
+  }
 
   return (
     <div>
 
-      <h3>SocialFeed</h3>
+      <h1>SocialFeed</h1>
 
-      <CreatePost/>
+      <h4><DisplayPosts parentEntries={entries}/></h4>
+
+      <h4><CreatePost addNewCommentProperty={addNewComment}/></h4>
       
-      <DisplayPosts parentEntries={entries}/>
+      
 
     </div>
   );

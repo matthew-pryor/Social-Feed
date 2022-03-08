@@ -3,20 +3,17 @@ const DisplayPosts = (props) => {
         <post>
             <feed>
                 <fr>
-                    <fh>Comment Number</fh>
-                    <fh>Name</fh>
-                    <fh>Comment</fh>
+                    <fh>Comments</fh>
                 </fr>
             </feed>
 
             <pbody>
-            {props.parentEntries.map((entry, index)=> {
+            {props.parentEntries.map((entry)=> {
                 return(
-                <tr>
-                    <td>{index + 1}</td>
-                    <td>{entry.name}</td>
-                    <td>{entry.comment}</td>
-                </tr>
+                <fr>
+                    <fh>{entry.name}</fh>
+                    <fh>{entry.comment}</fh>
+                </fr>
                 )
             })}
             </pbody>
