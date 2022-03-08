@@ -1,25 +1,26 @@
 const DisplayPosts = (props) => {
     return ( 
-        <table>
-            <thead>
-            <tr>
-                <th>Entry Number</th>
-                <th>Weight</th>
-                <th>Date</th>
-            </tr>
-            </thead>
-            <tbody>
+        <post>
+            <feed>
+                <fr>
+                    <fh>Comment Number</fh>
+                    <fh>Name</fh>
+                    <fh>Comment</fh>
+                </fr>
+            </feed>
+
+            <pbody>
             {props.parentEntries.map((entry, index)=> {
                 return(
                 <tr>
                     <td>{index + 1}</td>
-                    <td>{entry.weight}</td>
-                    <td>{entry.date}</td>
+                    <td>{entry.name}</td>
+                    <td>{entry.comment}</td>
                 </tr>
                 )
             })}
-            </tbody>
-      </table>
+            </pbody>
+      </post>
      );
 }
  
