@@ -1,29 +1,15 @@
-import React, {useState, useEffect} from "react";
-import CreatePost from "./Components/CreatePost/CreatePost";
-import DisplayPost from "./Components/DisplayPost/DisplayPost";
-import Post from "./Components/Post/Post";
+import React, {useState} from "react";
+import DisplayEntries from "./Components/DisplayEntries/DisplayEntries";
 
 function App() {
 
-  const [entries, setEntries] = useState([{username: 'Matty P', date: '03/07/2022'}])
+  const [entries, setEntries] = useState([{weight: 175, date: '11-23-2021'}, {weight: 178, date: '11-22-2021'}])
 
   return (
-    <div className="App">
-      <header>
-          <ph>SocialFeed</ph>
-          {entries.map((entry)=>{
-            return (
-              <pd>
-                <pc>{entry.name}</pc>
-                <pc>{entry.post}</pc>
-              </pd>
-            )
-          })}
-      </header>
+    <div>
+      
+      <DisplayEntries parentEntries={entries}/>
 
-      <body>
-
-      </body>
     </div>
   );
 }
