@@ -1,5 +1,6 @@
 import React, {useState} from "react";
-import DisplayEntries from "./Components/DisplayEntries/DisplayEntries";
+import DisplayPosts from "./Components/DisplayPosts/DisplayPosts";
+import CreatePost from "./Components/CreatePost/CreatePost";
 
 function App() {
 
@@ -7,8 +8,10 @@ function App() {
 
   return (
     <div>
+
+      <h3>SocialFeed</h3>
       
-      <DisplayEntries parentEntries={entries}/>
+      <CreatePost parentEntries={entries}/>
 
     </div>
   );
