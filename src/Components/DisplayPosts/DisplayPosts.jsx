@@ -1,3 +1,6 @@
+import CustomButton from "../LikeButton/LikeButton";
+
+
 const DisplayPosts = (props) => {
     return ( 
         <table>
@@ -13,6 +16,7 @@ const DisplayPosts = (props) => {
                 <tr>
                     <th>{entry.name}</th>
                     <th>{entry.comment}</th>
+                    <CustomButton message = "Like"/>
                 </tr>
                 )
             })}
