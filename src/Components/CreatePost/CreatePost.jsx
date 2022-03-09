@@ -12,7 +12,6 @@ const CreatePost = (props) => {
             name: name,
             comment: comment
         };
-        console.log(newEntry)
         props.addNewCommentProperty(newEntry)
     }
 

@@ -18,9 +18,9 @@ function App() {
 
       <h1>SocialFeed</h1>
 
-      <h4><DisplayPosts parentEntries={entries}/></h4>
-
       <h4><CreatePost addNewCommentProperty={addNewComment}/></h4>
+
+      <h4><DisplayPosts parentEntries={entries}/></h4>
 
     </div>
   );
