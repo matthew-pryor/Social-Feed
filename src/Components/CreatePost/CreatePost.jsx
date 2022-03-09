@@ -17,13 +17,13 @@ const CreatePost = (props) => {
     }
 
     return ( 
-        <postcontent onSubmit={submitComment}>
+        <form onSubmit={submitComment}>
             <label>Name </label>
             <input type='text' value={name} onChange={(event) => setName(event.target.value)}/>
             <label>Comment </label>
             <input type='text' value={comment} onChange={(event) => setComment(event.target.value)}/>
             <button type='submit'>Post</button>
-        </postcontent>
+        </form>
      );
 }
  

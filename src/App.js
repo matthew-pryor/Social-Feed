@@ -21,8 +21,6 @@ function App() {
       <h4><DisplayPosts parentEntries={entries}/></h4>
 
       <h4><CreatePost addNewCommentProperty={addNewComment}/></h4>
-      
-      
 
     </div>
   );
