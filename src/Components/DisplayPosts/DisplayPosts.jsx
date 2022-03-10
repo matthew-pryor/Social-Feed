@@ -1,7 +1,9 @@
 import LikeButton from "../LikeButton/LikeButton";
-import DislikeButton from "../../DislikeButton/DislikeButton";
+import DislikeButton from "../DislikeButton/DislikeButton";
+import "./DisplayPosts.css"
 
 const DisplayPosts = (props) => {
+
     return ( 
         <table>
             <thead>
@@ -14,10 +16,23 @@ const DisplayPosts = (props) => {
             {props.parentEntries.map((entry)=> {
                 return(
                 <tr>
-                    <th>{entry.name}</th>
-                    <th>{entry.comment}</th>
-                    <LikeButton message = "Like"/>
-                    <DislikeButton message = "Dislike"/>
+                    <div>
+                        <th>{entry.name}</th>
+                    </div>
+
+                    <div>
+                        <th>{entry.comment}</th>
+                    </div>
+
+                    <div>
+                        <th>{Date()}</th>
+                    </div>
+                    
+                    <div class="flex-container">
+                        <div class="flex-child"><LikeButton message = "Like"/></div>
+                        <div class="flex-child"><DislikeButton message = "Dislike"/></div>         
+                    </div>
+                    
                 </tr>
                 )
             })}

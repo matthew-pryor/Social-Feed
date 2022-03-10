@@ -1,0 +1,9 @@
+.flex-container {
+    display: flex;
+}
+
+.flex-child{
+    flex: 1;
+    border: none
+}
+

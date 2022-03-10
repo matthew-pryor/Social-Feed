@@ -17,10 +17,22 @@ const CreatePost = (props) => {
 
     return ( 
         <form onSubmit={submitComment}>
-            <label>Name </label>
-            <input type='text' value={name} onChange={(event) => setName(event.target.value)}/>
-            <label>Comment </label>
-            <input type='text' value={comment} onChange={(event) => setComment(event.target.value)}/>
+            <div>
+                <label>Name </label>
+            </div>
+
+            <div>
+                <input type='text' value={name} onChange={(event) => setName(event.target.value)}/>
+            </div>
+
+            <div>
+                <label>Comment </label>
+            </div>
+
+            <div>
+                <input type='text' value={comment} onChange={(event) => setComment(event.target.value)}/>
+            </div>
+
             <button type='submit'>Post</button>
         </form>
      );

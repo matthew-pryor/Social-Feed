@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import DisplayPosts from "./Components/DisplayPosts/DisplayPosts";
 import CreatePost from "./Components/CreatePost/CreatePost";
 
+
 function App() {
 
   const [entries, setEntries] = useState([{name: 'Matt', comment: 'I really hope this works'}])
@@ -15,8 +16,9 @@ function App() {
 
   return (
     <div>
-
+      <br/>
       <h1>SocialFeed</h1>
+      <br/>
 
       <h4><CreatePost addNewCommentProperty={addNewComment}/></h4>
 
