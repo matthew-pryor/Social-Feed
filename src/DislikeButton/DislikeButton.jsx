@@ -1,13 +1,13 @@
-import "./LikeButton.css"
+import "./DislikeButton.css"
 import React, {useState} from "react";
 
-const LikeButton = (props) => {
+const DislikeButton = (props) => {
 
     const [buttonClass, setButtonClass] = useState("inactive");
 
     function handleClick(){
         if(buttonClass === "inactive"){
-            setButtonClass("liked")
+            setButtonClass("disliked")
         }
         else{
             setButtonClass("inactive")
@@ -22,4 +22,4 @@ const LikeButton = (props) => {
 
 }
  
-export default LikeButton;
+export default DislikeButton;

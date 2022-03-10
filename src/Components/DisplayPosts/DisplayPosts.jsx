@@ -1,5 +1,5 @@
-import CustomButton from "../LikeButton/LikeButton";
-
+import LikeButton from "../LikeButton/LikeButton";
+import DislikeButton from "../../DislikeButton/DislikeButton";
 
 const DisplayPosts = (props) => {
     return ( 
@@ -16,7 +16,8 @@ const DisplayPosts = (props) => {
                 <tr>
                     <th>{entry.name}</th>
                     <th>{entry.comment}</th>
-                    <CustomButton message = "Like"/>
+                    <LikeButton message = "Like"/>
+                    <DislikeButton message = "Dislike"/>
                 </tr>
                 )
             })}
